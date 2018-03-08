@@ -1,0 +1,18 @@
+{
+  "name": "load_db_script",
+  "version": "0.0.1",
+  "description": "Para cargar datos aleatorios para el MVP de la app Tindogs",
+  "main": "script_carga_db.js",
+  "dependencies": {
+    "async": "^2.6.0",
+    "faker": "^4.1.0",
+    "mongoose": "^5.0.9",
+    "random-points-generator": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
