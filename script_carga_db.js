@@ -10,7 +10,6 @@ const arrayRazas = ["Affenpinscher","Afghan Hound","Afghan Shepherd","Aidi","Air
 
 const db = mongoose.connection;
 
-
 const ObjectId = mongoose.Schema.ObjectId
 
 db.on('error', (err) => {
@@ -22,22 +21,7 @@ console.log('<------------------>');
 console.log('Conectado a mongodb');
 });
 
-/*const Dog = mongoose.model('Dog', {
-    name: String,
-    age: Number,
-    breed: String,
-    purebreed: Boolean,
-    color: String,
-    query: { age: String, max_kms: Number, reproductive: Boolean, breed: String },
-    likes_from_others: [{
-        dog_like_id: ObjectId,
-        dog_name: String,
-        owner_id: ObjectId,
-        owner_name: String
-    }]
 
-
-})*/
 const User = mongoose.model('User', {
      first_name: String,
      last_name: String,
