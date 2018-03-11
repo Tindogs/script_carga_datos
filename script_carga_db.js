@@ -49,6 +49,8 @@ const User = mongoose.model('User', {
 
 const MAX_INSERTS = 2000
 const DATABASE_NAME = 'test1'
+const DATABASE_USER = 'SUPER_FAKE_USER'
+const DATABASE_PASS = 'SUPER_FAKE_PASS'
 var coll = new Array(MAX_INSERTS)
 var iterator = 0
 faker.locale = 'es'
@@ -59,7 +61,7 @@ faker.locale = 'es'
    mongodb://username:password@localhost:27017/database
    sacado de: http://mongoosejs.com/docs/connections.html
 */
-mongoose.connect('mongodb://localhost/'+ DATABASE_NAME,(err)=> {
+mongoose.connect(`mongodb://${DATABASE_USER}:${DATABASE_PASS}@localhost:27017/${DATABASE_NAME}`,(err)=> {
   if (err) {
     console.log(err);
     return;
